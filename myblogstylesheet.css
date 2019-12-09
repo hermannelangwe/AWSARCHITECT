@@ -1,7 +1,7 @@
 .terms {background-image: url(backgroundpicstars.jpg);
               background-repeat: no-repeat;
               background-size: cover;
-              padding: 200px 50px;}
+              padding: 200px 100px;}
    .audiobg {background-image: url(backgroundpiccorridor.jpg);
               background-repeat: no-repeat;
               background-size: cover;
@@ -19,3 +19,8 @@
               background-size: cover;}
 .teacher {padding: 50px 50px;background-color: #FF4D14;
           color: black;}
+
+.architect {background-image: url(usaroadpic.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding: 200px 100px;}

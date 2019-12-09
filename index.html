@@ -42,18 +42,25 @@
           font-size: 3.5rem;
         }
       }
+      .architect {background-image: url(usaroadpic.jpg);
+             background-repeat: no-repeat;
+              background-size: cover;
+              padding: 200px 50px;
+              color: blue;}
+
+      h2 {color: red;}
     </style>
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
+    <link href="myblogstylesheet.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
   <header class="blog-header py-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
        <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">ARCHITECTING FOR THE CLOUD</a>
+        <a class="blog-header-logo text-dark" href="#"><h2>ARCHITECTING FOR THE CLOUD</h2></a>
       </div>
      </div>
   </header>
@@ -61,25 +68,24 @@
   
   <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
+      <div class="architect">
       <h1 class="display-4 font-italic">PRESENTATION ON CLOUD COMPUTING</h1>
-      <p class="lead my-3">This presentation blog is a summary of notes after reading from pages 1 - 20 of paper 1. <br/> AWS BEST PRACTICES</p>
+      <p class="lead my-3">This presentation blog is a summary of notes after reading paper 1.</color> <br/> AWS BEST PRACTICES</p>
       </div>
+    </div>
   </div>
 
   <div class="row mb-2">
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          -primary">AWS BEST PRACTICES</strong>
-          <h3 class="mb-0">Featured post</h3>
+          <strong>AWS BEST PRACTICES</strong>
           <div class="mb-1 text-muted">05 DEC 2019</div>
           <div style="background-color: cyan">
-          <strong class="d-inline-block mb-2 text
-          <p class="card-text mb-auto">Individuals or companies can use the AWS (Amazon Web Services) to lift or shift ( migrate ) thier applications so as to benefit from a secure, scalable, efficient and cost effective  as well as a global service which will allow users to access your servers from the nearest location anywhere in the world.</p>
+          <strong class="d-inline-block mb-2 text">
+          <p class="card-text mb-auto"> Individuals or companies can use the AWS (Amazon Web Services) to lift or shift ( migrate ) thier applications so as to benefit from a secure, scalable, efficient and cost effective  as well as a global service which will allow users to access your servers from the nearest location anywhere in the world.</p>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
+        
         </div>
       </div>
   
@@ -92,13 +98,13 @@
          <div style="background-color: pink">
           <p class="mb-auto"> * AWS cloud computing offers flexibility, global and scalable capacity, managed services, built-in security, options for cost optimization, and various operating models. <br/>
           * In a traditional computing environment, you make a provision for your required IT infrastructure capacity based on an estimate of the level of demand. This means you will have to buy costly hardware which might not be used  and can stay idle during low demand, or your equipment might not have sufficient capacity during high demand.<br/>
-          * - However with AWS cloud computing, you can acquire as little infrastructural capacity as you need but which has the ability to be scaled up to meet actual demand, while only paying for what you use.  </p>
+          * - However with AWS cloud computing, you can acquire as little infrastructural capacity as you need but which has the ability to be scaled up to meet actual demand, while only paying for what you use.  </p> <br/>
+          <p>- Automation: 
+            In a traditional IT infrastructure, you often have to manually react to a variety of events.  However using Automation in AWS applictaion architecture  will ensure your system’s stability, efficiency,  more resiliency, scalability, and performance.  </p>
           
         </div>
       </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -115,9 +121,7 @@
   - Vertical – involving increasing the capacity of  a single computer such as upgrading the hard   drive  or memory RAM. But this can reach a limit.
   - Horizontal – involves increasing the number of computers or servers to handle more capacity   using Stateless  applications ( which does not store a users session  or stateful application which   keeps record of a users activity)</p>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -129,23 +133,67 @@
         <div style="background-color: orange">  
           <p class="card-text mb-auto">This can be used as disposable resource instead of fixed Servers which are used in a traditional infrastructure environment. With AWS, you can launch as many infrastructures as you need, and use them only for as long as you need them. 
 
-When you need to launch a new server or resource, or to increase your storage capacity, the following methods can be used:
-- Bootstrap - which are codes that install software or copy data to bring that resource to a particular state.
--  Golden Images - which is a snapshot of a particular state of that resource and gives faster start times and removes dependencies  on other third-party repositories.  You can customize an EC2 instance and then save its configuration by creating an Amazon Machine Image (AMI).
-- Hybrid – this is a combination of the two approaches:  a golden image and a bootstrapping action. </p>
-</div>
+    When you need to launch a new server or resource, or to increase your storage capacity, the following methods can be used:
+    - Bootstrap - which are codes that install software or copy data to bring that resource to a particular state.
+    -  Golden Images - which is a snapshot of a particular state of that resource and gives faster start times and removes dependencies  on other third-party repositories.  You can customize an EC2 instance and then save its configuration by creating an Amazon Machine Image (AMI).
+    - Hybrid – this is a combination of the two approaches:  a golden image and a bootstrapping action. </p>
+    </div>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
+        
       </div>
     </div>
     </div><!-- /.blog-main -->
 
-    
+    <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">INFRASTRUCTURE MANAGEMENT AND DEPLOYMENT</strong>
+       <div style="background-color: yellow">   
+          <p class="card-text mb-auto">AWS allows for the efficienct management and deployment of applications using the following tools:</p><br/>
+<p>- AWS Elastic Beanstalk: You can use this service to deploy and scale web applications and services by simply uploading their application code, and the service automatically handles all the details, such as resource provisioning, load balancing, auto scaling, and monitoring.</p>
+
+<p>- Amazon EC2 auto recovery: You can create an Amazon CloudWatch alarm that monitors an EC2 instance and automatically recovers it if it becomes impaired.</p>
+
+<p>- AWS Systems Manager: You can automatically collect software inventory, apply OS patches, create a system image to configure Windows and Linux operating systems, and execute arbitrary commands. Provisioning these services simplifies the operating model and ensures the optimum environment.</p>
+
+<p>- Auto Scaling: You can maintain application availability and performance and scale your Amazon EC2 services that you are running upwards or downwards  to the desired number of healthy EC2 instances across multiple Availability Zones so as to optimize costs.
+</p>
+<p>-A mazon CloudWatch alarms: You can create a CloudWatch alarm that sends an Amazon Simple Notification Service (Amazon SNS) message when a particular metric goes beyond a specified threshold for a specified number of periods.
+</p>
+<p>- Amazon CloudWatch Events: Delivers a near real-time stream of system events that describe changes in AWS resources.
+
+-AWS Lambda scheduled events: You can create a Lambda function and configure AWS Lambda to execute it on a regular schedule.
+
+- AWS WAF security automations: AWS WAF is a web application firewall that enables you to create custom, application-specific rules that block common attack patterns that can affect application availability, compromise security, or consume excessive resources.
+</p>
+<p>- Loose Coupling 
+Loose coupling enables an IT system to be broken into smaller, loosely coupled components in a way that reduces interdependencies such that the various components interact with each other through only specific interfaces and a change or a failure in one component should not cascade to other components. 
+</p>
+<p>- Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. It handles all the tasks involved in accepting and processing up to hundreds of thousands of concurrent API calls, including traffic management, authorization and access control, monitoring, and API version management. 
+</p>
+<p>- Service Discovery 
+Service discovery is the glue between the components in an IT system and it is important that it is highly available and reliable.   A simple way to achieve service discovery in an  Amazon EC2-hosted service is through Elastic Load Balancing (ELB). 
+  </p>
+        </div>
+       
+    </div>
+  </div>
 
   </div><!-- /.row -->
-
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">AWS CLOUD INFRASTRUCTURE</strong>
+        <div style="background-color: orange">  
+          <p class="card-text mb-auto">When you design your architecture in the AWS Cloud, it is important to consider the important principles and design patterns available in AWS, which include selecting the right database for your application, and selecting architect applications that can scale horizontally and with high availability. ALso considering the security. </p>
+    </div>
+        </div>
+        
+      </div>
+    </div>
+    </div><!-- /.blog-main -->
 </main><!-- /.container -->
 
 <footer class="blog-footer">
